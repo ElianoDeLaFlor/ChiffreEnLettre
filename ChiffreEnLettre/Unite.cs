@@ -4,18 +4,25 @@ using System.Text;
 
 namespace ChiffreEnLettre
 {
-    class Unite
+    public class Unite
     {
-        public static long Unit { get; set; }
-
-        /// <summary>
-        /// Contient le nom en lettre des chiffres des unités
-        /// </summary>
         private static readonly string[] TableauUnite = new[] { "Zéro", "Un", "Deux", "Trois", "Quatre", "Cinq", "Six", "Sept", "Huit", "Neuf" };
+        private static readonly string[] TableauUniteCentaine = new[] { "", "", "Deux", "Trois", "Quatre", "Cinq", "Six", "Sept", "Huit", "Neuf" };
+        private static readonly string[] TableauUniteDizaineCentaine = new[] { "", "Un", "Deux", "Trois", "Quatre", "Cinq", "Six", "Sept", "Huit", "Neuf" };
+        public long Unit { get; set; }
 
-        public static string InLetter(long unit)
+        public static string InLetter(long u)
         {
-            return TableauUnite[unit];
+            return TableauUnite[u];
+        }
+
+        public static string UniteCentaineInLetter(long u)
+        {
+            return TableauUniteCentaine[u];
+        }
+        public static string UniteDizaineCentaineInLetter(long u)
+        {
+            return TableauUniteDizaineCentaine[u];
         }
     }
 }
