@@ -28,12 +28,12 @@ namespace ChiffreEnLettre
             else if (mile.IsDizaine())
             {
                 //Dizaine
-                mille = $"{DizainesInLetter(mile)} ";
+                mille = $"{DizainesInLetter(mile)}";
             }
             else
             {
                 //Centaine
-                mille = $"{CentaineInLetter(mile)} ";
+                mille = $"{CentaineInLetter(mile)}";
             }
              
             
@@ -49,7 +49,7 @@ namespace ChiffreEnLettre
             }
             else
             {
-                //Dizaine
+                //Centaine
                 rslt = $"{mille} mile {CentaineInLetter(k)}";
             }
 
