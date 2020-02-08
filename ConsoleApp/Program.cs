@@ -11,6 +11,9 @@ namespace ConsoleApp
             string k = "";
             do
             {
+                //affiche la valeur maximale que peut contenir un long
+                Console.WriteLine(string.Format("{0:C2}", 1234567));
+                Console.WriteLine(long.MaxValue);
                 Console.WriteLine("Votre nombre");
                 string nbr = Console.ReadLine();
                 EnLettre.Chiffre = nbr;
