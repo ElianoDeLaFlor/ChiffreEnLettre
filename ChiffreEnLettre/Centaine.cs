@@ -31,7 +31,7 @@ namespace ChiffreEnLettre
                 rslt = cent + " cent " + (DizainesInLetter(k)).ToLower();
             }
 
-            return rslt.FirstToUpperCase().Trim();
+            return rslt.Trim().FirstToUpperCase();
         }
     }
 }
